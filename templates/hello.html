@@ -1,0 +1,72 @@
+<html>
+<head>
+<style>
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  b
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Yellowtail"/>
+</head>
+<body bgcolor = "#c5d5cb">
+<center><h1 class="fa fa-header" style ="font-family:yellowtail" aria-hidden="true">drawHTML</h1></center>
+<hr style = "color:black">
+
+
+<div class="split left">
+  <div class="centered" >
+    {% for i in aray_sent %}
+        {{i|safe}}<br>
+    {% endfor %}
+
+  </div>
+</div>
+
+<div class="split right">
+  <div style = "padding-top:80px">
+    {% for k in ini %}
+        {{k}}<br>
+    {% endfor %}
+    {% for i in aray_sent %}
+        {{i}}<br>
+    {% endfor %}
+    {% for j in final %}
+        {{j}}<br>
+    {% endfor %}
+  </div>
+</div>
+</body>
+</html>
