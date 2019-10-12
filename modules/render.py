@@ -17,5 +17,9 @@ def render_html(typ,y,x,height,width):
         return """<input type = "radio" style ="padding-left:""" +str(coor_w)+ """px,padding-top:""" + str(coor_h) + """px">click Me!"""
     elif(typ == "linebreak"):
         return """<hr style ="padding-left:""" +str(coor_w)+ """px,padding-top:""" + str(coor_h) + """px">"""
-   
+    elif(typ == "textinput"):
+        return """<input type = "text" style ="padding-left:""" +str(coor_w)+ """px,padding-top:""" + str(coor_h) + """px">"""
+    elif(typ == "datepicker"):
+        return """<input type = "date" style ="padding-left:""" +str(coor_w)+ """px,padding-top:""" + str(coor_h) + """px">"""
+    
     # <button type="button" style ="width:20px,height:30px">click Me!</button>
