@@ -21,5 +21,11 @@ def render_html(typ,y,x,height,width):
         return """<input type = "text" style ="padding-left:""" +str(coor_w)+ """px,padding-top:""" + str(coor_h) + """px">"""
     elif(typ == "datepicker"):
         return """<input type = "date" style ="padding-left:""" +str(coor_w)+ """px,padding-top:""" + str(coor_h) + """px">"""
+    elif(typ == "slider"):
+        return """<input type = "range" min="1" max="100" value="50" class="slider" id="myRange" style ="padding-left:""" +str(coor_w)+ """px,padding-top:""" + str(coor_h) + """px">"""
+    elif(typ == "list"):
+        return """<ul style ="padding-left:""" +str(coor_w)+ """px,padding-top:""" + str(coor_h) + """px"><li>Check_out</li></ul>"""
+    elif(typ == "image"):
+        return """<img src= "https://yt3.ggpht.com/a/AGF-l7-VZ8qMe-CQ7CTHbYTNHAp1dB0pDrPx47hzmw=s900-c-k-c0xffffffff-no-rj-mo" alt="Italian Trulli">"""
     
     # <button type="button" style ="width:20px,height:30px">click Me!</button>
