@@ -27,5 +27,7 @@ def render_html(typ,y,x,height,width):
         return """<ul style ="padding-left:""" +str(coor_w)+ """px,padding-top:""" + str(coor_h) + """px"><li>Check_out</li></ul>"""
     elif(typ == "image"):
         return """<img src= "https://yt3.ggpht.com/a/AGF-l7-VZ8qMe-CQ7CTHbYTNHAp1dB0pDrPx47hzmw=s900-c-k-c0xffffffff-no-rj-mo" alt="Italian Trulli">"""
+    elif(typ == "dropdown"):
+        return """<select style ="padding-left:""" +str(coor_w)+ """px,padding-top:""" + str(coor_h) + """px"><option>rahul</option><option>harsh</option></select>"""
     
     # <button type="button" style ="width:20px,height:30px">click Me!</button>
